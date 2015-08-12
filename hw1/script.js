@@ -29,6 +29,7 @@ $(function(){
         var h = d.getHours();
         var m = d.getMinutes();
         var id;
+
         this.printTimer = function(){
 
             id = setInterval(function(){
@@ -53,9 +54,10 @@ $(function(){
     }
 
 
+   // ДЛЯ ТЕСТУВАННЯ ОБЄКТУ Countdown, РОЗКОМЕНТУЙТЕ ЙОГО І ЗАКОМЕНТУЙТЕ Countup
 
-   // var count = new Countup($('#timerview'));
-    var count = new Countdown($('#timerview'));
+     var count = new Countup($('#timerview'));
+    //var count = new Countdown($('#timerview'));
 
     count.printTimer();
 
