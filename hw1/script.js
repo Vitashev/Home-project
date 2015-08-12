@@ -3,6 +3,7 @@ $(function(){
        var d = new Date();
        var counter =0;
        var id;
+
        this.printTimer = function(){
            id = setInterval(function(){
               d.setHours(0,0,counter++);
@@ -29,6 +30,7 @@ $(function(){
         var m = d.getMinutes();
         var id;
         this.printTimer = function(){
+
             id = setInterval(function(){
                 d.setHours(h,m,counter--);
                 place.text(d.toLocaleTimeString());
@@ -42,10 +44,14 @@ $(function(){
             this.printTimer();
         };
         this.refresh = function(){
+            d = new Date();
+            h = d.getHours();
+            m = d.getMinutes();
             counter = d.getSeconds();
-        }
+        };
 
     }
+
 
 
    // var count = new Countup($('#timerview'));
