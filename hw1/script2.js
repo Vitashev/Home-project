@@ -42,7 +42,7 @@ $(function(){
 
     function Countdown(place){
         var d = new Date;
-        var m, s, h, start = d.getHours()*3600 + d.getMinutes()*60 + d.getSeconds();;
+        var m, s, h, start = d.getHours()*3600 + d.getMinutes()*60 + d.getSeconds();
         var id;
 
         this.printTimer = function(){
@@ -85,11 +85,11 @@ $(function(){
 
     // ДЛЯ ТЕСТУВАННЯ ОБЄКТУ Countdown, РОЗКОМЕНТУЙТЕ ЙОГО І ЗАКОМЕНТУЙТЕ Countup
 
-    /*var count = new Countup($('#timerview'));
-    count.printTimer(30);*/
+    var count = new Countup($('#timerview'));
+    count.printTimer(2*3600);
 
-    var count = new Countdown($('#timerview'));
-    count.printTimer();
+    /*var count = new Countdown($('#timerview'));
+    count.printTimer();*/
 
     $('#stop').on('click',function(){
         count.pause();
