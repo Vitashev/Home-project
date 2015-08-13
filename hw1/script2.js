@@ -1,6 +1,6 @@
 $(function(){
     function Countup(place){
-        var m, s, h, start = 3600;
+        var m, s, h, start = 0;
         var id;
 
         this.printTimer = function(end){
