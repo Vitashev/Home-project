@@ -5,6 +5,8 @@ $(function(){
        var id;
 
        this.printTimer = function(){
+
+
            id = setInterval(function(){
               d.setHours(0,0,counter++);
               place.text(d.toLocaleTimeString());
